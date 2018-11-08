@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" sizeclass="8" type="collection">
         <element label="new column" max_length="40" name="new_column" type="integer"/>
         <element display="true" label="some test row" max_length="40" name="some_test_row" type="string"/>
         <element default="333" label="Mandatory field" mandatory="true" max_length="40" name="u_integer_1" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
