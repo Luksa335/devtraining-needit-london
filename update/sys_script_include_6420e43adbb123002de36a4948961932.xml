@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.fillUpEmail</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>fillUpEmail</name>
+        <script><![CDATA[var fillUpEmail = Class.create();
+
+
+fillUpEmail.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
+    
+
+		fillUpCompany: function() {
+		var dataSys = this.getParameter('sysparm_userID');
+		var takesData = new GlideRecord('sys_user');
+		takesData.get(dataSys);
+		return takesData.company+ '';
+		
+	
+	},	
+	fillUpEmails: function() {
+		var data = this.getParameter('sysparm_userID');
+		var takeData = new GlideRecord('sys_user');
+		takeData.get(data);
+		return takeData.email+ '';
+		
+	},
+		
+    type: 'fillUpEmail'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-19 09:53:59</sys_created_on>
+        <sys_id>6420e43adbb123002de36a4948961932</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>fillUpEmail</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_6420e43adbb123002de36a4948961932</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-19 11:52:59</sys_updated_on>
+    </sys_script_include>
+</record_update>
