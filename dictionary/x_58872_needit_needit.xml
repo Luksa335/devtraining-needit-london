@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" sizeclass="4" type="collection">
         <element label="new column" max_length="40" name="new_column" type="integer"/>
         <element display="true" label="some test row" max_length="40" name="some_test_row" type="string"/>
         <element label="Dialog Window" max_length="100" name="u_dialog" type="icon"/>
