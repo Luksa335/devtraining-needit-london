@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" sizeclass="4" type="collection">
+    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" sizeclass="5" type="collection">
         <element label="new column" max_length="40" name="new_column" type="integer"/>
         <element display="true" label="some test row" max_length="40" name="some_test_row" type="string"/>
         <element label="Dialog Window" max_length="100" name="u_dialog" type="icon"/>
+        <element label="When need Date" mandatory="true" max_length="40" name="u_glide_date_1" type="glide_date"/>
         <element default="333" label="Mandatory field" mandatory="true" max_length="40" name="u_integer_1" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element default="6816f79cc0a8016401c5a33be04be441" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
@@ -18,6 +19,7 @@
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Other" sequence="0" value="Other"/>
                 <element inactive_on_update="false" label="Human Resources 2" sequence="1" value="hr2"/>
                 <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities1"/>
                 <element inactive_on_update="false" label="Facilities 2" sequence="3" value="facilities2"/>
