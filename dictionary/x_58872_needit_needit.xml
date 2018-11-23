@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" sizeclass="5" type="collection">
+    <element extends="task" label="needIt" max_length="40" name="x_58872_needit_needit" sizeclass="39" type="collection">
         <element label="new column" max_length="40" name="new_column" type="integer"/>
         <element display="true" label="some test row" max_length="40" name="some_test_row" type="string"/>
         <element label="Dialog Window" max_length="100" name="u_dialog" type="icon"/>
-        <element label="When need Date" mandatory="true" max_length="40" name="u_glide_date_1" type="glide_date"/>
+        <element label="When need Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
         <element default="333" label="Mandatory field" mandatory="true" max_length="40" name="u_integer_1" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element default="6816f79cc0a8016401c5a33be04be441" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
